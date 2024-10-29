@@ -1,15 +1,15 @@
 package com.example.kl1_1
 
 import android.os.Bundle
-import android.util.Log
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class MyActivity : AppCompatActivity() {
 
-    lateinit var recyclerView: RecyclerView
-    lateinit var fab: FloatingActionButton
+class MyActivity: AppCompatActivity() {
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var fab: Button
 
     private val adapter = MyAdapter()
 

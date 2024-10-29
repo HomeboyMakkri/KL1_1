@@ -1,12 +1,11 @@
 package com.example.kl1_1
 
 import android.graphics.Color
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
+class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
 
     private val items = ArrayList<Int>()
 
@@ -33,7 +32,7 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
     fun setItems(list: List<Int>) {
         items.clear()
         items.addAll(list)
-        notifyDataSetChanged()
+        notifyItemRangeChanged(0, itemCount)
     }
 
     fun addItem(item: Int) {
